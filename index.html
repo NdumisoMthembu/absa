@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-nav grid global-padding">
+            <ul>
+                <li>
+                    <a href=""> home</a>
+                </li>
+                <li>
+
+                    <a href=""> faq's</a>
+                </li>
+                <li>
+
+                    <a href=""> contact</a>
+                </li>
+                <li>
+                    <select name="" id="">
+                        <option value="usd">usd</option>
+                        <option value="usd">rand</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="social-links grid">
+                <div class="item">
+                    <img class="facebook" src="./images/icons/facebook.svg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/icons/twitter.svg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/icons/pinterest.svg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/icons/instagram.svg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/icons/phone-call.svg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/icons/email.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="filters-container grid">
+            <div class="title">
+                <h1> canvas</h1>
+            </div>
+            <div class="filters grid">
+                <div class="item grid">
+                    <div class="icon">
+                        <img src="./images/icons/home.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            Home
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item  grid" onclick="switchMainTab('flights', this)">
+                    <div class="icon">
+                        <img src="./images/icons/plane.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            flights
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item grid" onclick="switchMainTab('hotels', this)">
+                    <div class="icon">
+                        <img src="./images/icons/location.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            hotels
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item grid">
+                    <div class="icon">
+                        <img src="./images/icons/gift.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            holidays
+                        </p>
+                    </div>
+                </div>
+                <div class="item grid">
+                    <div class="icon">
+                        <img src="./images/icons/gift.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            blogs
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item grid">
+                    <div class="icon">
+                        <img src="./images/icons/phone-call.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            084 25209472
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="tags">
+                <div class="tag active grid"  onclick="switchTab('flights', this)">
+                    <div class="icon">
+                        <img src="./images/icons/plane.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            flights
+                        </p>
+                    </div>
+                </div>
+                <div class="tag  grid" onclick="switchTab('hotels', this)">
+                    <div class="icon">
+                        <img src="./images/icons/location.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            hotels
+                        </p>
+                    </div>
+                </div>
+                <div class="tag   grid"  onclick="switchTab('flights+hotels', this)">
+                    <div class="icon">
+                        <img src="./images/icons/plane.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            flights+hotels <span>save</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="tag  grid"  onclick="switchTab('holidays', this)">
+                    <div class="icon">
+                        <img src="./images/icons/gift.svg" alt="">
+                    </div>
+                    <div class="label">
+                        <p>
+                            holidays
+                        </p>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="form">
+                <h1 id="tittleTags">
+                    Book your flights
+                </h1>
+                <form action="" id="form">
+                    <div class="grid">
+                        <div class="form-item">
+                            <div class="label">From</div>
+                            <div class="input">
+                                <input type="text" placeholder="e.g OR Thambo" name="from" id="from">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <div class="label">To</div>
+                            <div class="input">
+                                <input type="text" placeholder="e.g King Shaka" name="to" id="to">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-3-cols">
+                        <div class="form-item">
+                            <div class="label">departure</div>
+                            <div class="input">
+                                <input type="date" name="departure" id="departure">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <div class="label">return</div>
+                            <div class="input">
+                                <input type="date" name="return" id="return">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <div class="label">adults</div>
+                            <div class="input">
+                                <input type="number" name="adults" id="adults">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <button type="submit">search flights</button>
+                        <button type="button" class="link">advanced search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
